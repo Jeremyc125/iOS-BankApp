@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		901328CC27E8EAB8001FB94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901328CB27E8EAB8001FB94F /* AppDelegate.swift */; };
+		901328D027E8EAB8001FB94F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901328CF27E8EAB8001FB94F /* LoginViewController.swift */; };
+		901328D527E8EAB9001FB94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901328D427E8EAB9001FB94F /* Assets.xcassets */; };
+		901328D827E8EAB9001FB94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901328D627E8EAB9001FB94F /* LaunchScreen.storyboard */; };
+		9013290727E8F216001FB94F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9013290627E8F216001FB94F /* LoginView.swift */; };
+		901D7A7827E9583000FEB94B /* OnBoardingSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D7A7727E9583000FEB94B /* OnBoardingSlides.swift */; };
+		901D7A7A27E95BC900FEB94B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D7A7927E95BC900FEB94B /* OnboardingViewController.swift */; };
+		9082B98E27EC992E0040A650 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082B98D27EC992E0040A650 /* LogoutViewController.swift */; };
+		9082B99227EC9FC50040A650 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082B99127EC9FC50040A650 /* SaveData.swift */; };
+		9082BA0C27ECD2100040A650 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082BA0B27ECD2100040A650 /* MainViewController.swift */; };
+		9082BA1027ECD3F10040A650 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082BA0F27ECD3F10040A650 /* UIViewControllerUtils.swift */; };
+		9082BA1327ECF0070040A650 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082BA1227ECF0070040A650 /* AccountSummaryViewController.swift */; };
+		9082BA1E27ED46AC0040A650 /* AccountSummaryViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082BA1D27ED46AC0040A650 /* AccountSummaryViewHeader.swift */; };
+		9082BA2027ED46D40040A650 /* AccountSummaryViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9082BA1F27ED46D40040A650 /* AccountSummaryViewHeader.xib */; };
+		90D93A5B27EE153200F6D7AD /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D93A5A27EE153200F6D7AD /* AccountSummaryCell.swift */; };
+		90D93A5D27EE440400F6D7AD /* DecimalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D93A5C27EE440400F6D7AD /* DecimalUtil.swift */; };
+		90D93A5F27EE444C00F6D7AD /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D93A5E27EE444C00F6D7AD /* CurrencyFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		901328DF27E8EAB9001FB94F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901328C027E8EAB8001FB94F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901328C727E8EAB8001FB94F;
+			remoteInfo = "Wiley-Bank";
+		};
+		901328E927E8EAB9001FB94F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901328C027E8EAB8001FB94F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901328C727E8EAB8001FB94F;
+			remoteInfo = "Wiley-Bank";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		901328C827E8EAB8001FB94F /* Wiley-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiley-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901328CB27E8EAB8001FB94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		901328CF27E8EAB8001FB94F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		901328D427E8EAB9001FB94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901328D727E8EAB9001FB94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		901328D927E8EAB9001FB94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901328DE27E8EAB9001FB94F /* Wiley-BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiley-BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901328E827E8EAB9001FB94F /* Wiley-BankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiley-BankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9013290627E8F216001FB94F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		901D7A7727E9583000FEB94B /* OnBoardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlides.swift; sourceTree = "<group>"; };
+		901D7A7927E95BC900FEB94B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9082B98D27EC992E0040A650 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		9082B99127EC9FC50040A650 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		9082BA0B27ECD2100040A650 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9082BA0F27ECD3F10040A650 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
+		9082BA1227ECF0070040A650 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		9082BA1D27ED46AC0040A650 /* AccountSummaryViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewHeader.swift; sourceTree = "<group>"; };
+		9082BA1F27ED46D40040A650 /* AccountSummaryViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryViewHeader.xib; sourceTree = "<group>"; };
+		90D93A5A27EE153200F6D7AD /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		90D93A5C27EE440400F6D7AD /* DecimalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtil.swift; sourceTree = "<group>"; };
+		90D93A5E27EE444C00F6D7AD /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		901328C527E8EAB8001FB94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901328DB27E8EAB9001FB94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901328E527E8EAB9001FB94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		901328BF27E8EAB8001FB94F = {
+			isa = PBXGroup;
+			children = (
+				901328CA27E8EAB8001FB94F /* Wiley-Bank */,
+				901328C927E8EAB8001FB94F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		901328C927E8EAB8001FB94F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				901328C827E8EAB8001FB94F /* Wiley-Bank.app */,
+				901328DE27E8EAB9001FB94F /* Wiley-BankTests.xctest */,
+				901328E827E8EAB9001FB94F /* Wiley-BankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		901328CA27E8EAB8001FB94F /* Wiley-Bank */ = {
+			isa = PBXGroup;
+			children = (
+				9082B99027EC9FB40040A650 /* Utils */,
+				901D7A7527E9529300FEB94B /* login */,
+				901D7A7627E9580100FEB94B /* Onboarding */,
+				9082B98F27EC99340040A650 /* logout */,
+				9082BA1127ECEFBF0040A650 /* AccountSummary */,
+				9013290427E8F0D3001FB94F /* files */,
+				901328CB27E8EAB8001FB94F /* AppDelegate.swift */,
+				9082BA0B27ECD2100040A650 /* MainViewController.swift */,
+			);
+			path = "Wiley-Bank";
+			sourceTree = "<group>";
+		};
+		9013290427E8F0D3001FB94F /* files */ = {
+			isa = PBXGroup;
+			children = (
+				901328D427E8EAB9001FB94F /* Assets.xcassets */,
+				901328D627E8EAB9001FB94F /* LaunchScreen.storyboard */,
+				901328D927E8EAB9001FB94F /* Info.plist */,
+			);
+			name = files;
+			sourceTree = "<group>";
+		};
+		901D7A7527E9529300FEB94B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9013290627E8F216001FB94F /* LoginView.swift */,
+				901328CF27E8EAB8001FB94F /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		901D7A7627E9580100FEB94B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				901D7A7927E95BC900FEB94B /* OnboardingViewController.swift */,
+				901D7A7727E9583000FEB94B /* OnBoardingSlides.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9082B98F27EC99340040A650 /* logout */ = {
+			isa = PBXGroup;
+			children = (
+				9082B98D27EC992E0040A650 /* LogoutViewController.swift */,
+			);
+			path = logout;
+			sourceTree = "<group>";
+		};
+		9082B99027EC9FB40040A650 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9082B99127EC9FC50040A650 /* SaveData.swift */,
+				9082BA0F27ECD3F10040A650 /* UIViewControllerUtils.swift */,
+				90D93A5C27EE440400F6D7AD /* DecimalUtil.swift */,
+				90D93A5E27EE444C00F6D7AD /* CurrencyFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9082BA1127ECEFBF0040A650 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				90D93A5927EE14D500F6D7AD /* Cell */,
+				90D93A5827EE14CA00F6D7AD /* Header */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		90D93A5827EE14CA00F6D7AD /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				9082BA1F27ED46D40040A650 /* AccountSummaryViewHeader.xib */,
+				9082BA1D27ED46AC0040A650 /* AccountSummaryViewHeader.swift */,
+				9082BA1227ECF0070040A650 /* AccountSummaryViewController.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		90D93A5927EE14D500F6D7AD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				90D93A5A27EE153200F6D7AD /* AccountSummaryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		901328C727E8EAB8001FB94F /* Wiley-Bank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901328F227E8EAB9001FB94F /* Build configuration list for PBXNativeTarget "Wiley-Bank" */;
+			buildPhases = (
+				901328C427E8EAB8001FB94F /* Sources */,
+				901328C527E8EAB8001FB94F /* Frameworks */,
+				901328C627E8EAB8001FB94F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wiley-Bank";
+			productName = "Wiley-Bank";
+			productReference = 901328C827E8EAB8001FB94F /* Wiley-Bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		901328DD27E8EAB9001FB94F /* Wiley-BankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901328F527E8EAB9001FB94F /* Build configuration list for PBXNativeTarget "Wiley-BankTests" */;
+			buildPhases = (
+				901328DA27E8EAB9001FB94F /* Sources */,
+				901328DB27E8EAB9001FB94F /* Frameworks */,
+				901328DC27E8EAB9001FB94F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				901328E027E8EAB9001FB94F /* PBXTargetDependency */,
+			);
+			name = "Wiley-BankTests";
+			productName = "Wiley-BankTests";
+			productReference = 901328DE27E8EAB9001FB94F /* Wiley-BankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		901328E727E8EAB9001FB94F /* Wiley-BankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901328F827E8EAB9001FB94F /* Build configuration list for PBXNativeTarget "Wiley-BankUITests" */;
+			buildPhases = (
+				901328E427E8EAB9001FB94F /* Sources */,
+				901328E527E8EAB9001FB94F /* Frameworks */,
+				901328E627E8EAB9001FB94F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				901328EA27E8EAB9001FB94F /* PBXTargetDependency */,
+			);
+			name = "Wiley-BankUITests";
+			productName = "Wiley-BankUITests";
+			productReference = 901328E827E8EAB9001FB94F /* Wiley-BankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		901328C027E8EAB8001FB94F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					901328C727E8EAB8001FB94F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					901328DD27E8EAB9001FB94F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 901328C727E8EAB8001FB94F;
+					};
+					901328E727E8EAB9001FB94F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 901328C727E8EAB8001FB94F;
+					};
+				};
+			};
+			buildConfigurationList = 901328C327E8EAB8001FB94F /* Build configuration list for PBXProject "Wiley-Bank" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 901328BF27E8EAB8001FB94F;
+			productRefGroup = 901328C927E8EAB8001FB94F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				901328C727E8EAB8001FB94F /* Wiley-Bank */,
+				901328DD27E8EAB9001FB94F /* Wiley-BankTests */,
+				901328E727E8EAB9001FB94F /* Wiley-BankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		901328C627E8EAB8001FB94F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9082BA2027ED46D40040A650 /* AccountSummaryViewHeader.xib in Resources */,
+				901328D827E8EAB9001FB94F /* LaunchScreen.storyboard in Resources */,
+				901328D527E8EAB9001FB94F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901328DC27E8EAB9001FB94F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901328E627E8EAB9001FB94F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		901328C427E8EAB8001FB94F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9082BA1027ECD3F10040A650 /* UIViewControllerUtils.swift in Sources */,
+				901D7A7827E9583000FEB94B /* OnBoardingSlides.swift in Sources */,
+				9013290727E8F216001FB94F /* LoginView.swift in Sources */,
+				90D93A5D27EE440400F6D7AD /* DecimalUtil.swift in Sources */,
+				9082B99227EC9FC50040A650 /* SaveData.swift in Sources */,
+				90D93A5F27EE444C00F6D7AD /* CurrencyFormatter.swift in Sources */,
+				901D7A7A27E95BC900FEB94B /* OnboardingViewController.swift in Sources */,
+				901328D027E8EAB8001FB94F /* LoginViewController.swift in Sources */,
+				90D93A5B27EE153200F6D7AD /* AccountSummaryCell.swift in Sources */,
+				9082B98E27EC992E0040A650 /* LogoutViewController.swift in Sources */,
+				9082BA1327ECF0070040A650 /* AccountSummaryViewController.swift in Sources */,
+				9082BA1E27ED46AC0040A650 /* AccountSummaryViewHeader.swift in Sources */,
+				901328CC27E8EAB8001FB94F /* AppDelegate.swift in Sources */,
+				9082BA0C27ECD2100040A650 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901328DA27E8EAB9001FB94F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901328E427E8EAB9001FB94F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		901328E027E8EAB9001FB94F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901328C727E8EAB8001FB94F /* Wiley-Bank */;
+			targetProxy = 901328DF27E8EAB9001FB94F /* PBXContainerItemProxy */;
+		};
+		901328EA27E8EAB9001FB94F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901328C727E8EAB8001FB94F /* Wiley-Bank */;
+			targetProxy = 901328E927E8EAB9001FB94F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		901328D627E8EAB9001FB94F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901328D727E8EAB9001FB94F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		901328F027E8EAB9001FB94F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		901328F127E8EAB9001FB94F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		901328F327E8EAB9001FB94F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wiley-Bank/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jchen.Wiley-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		901328F427E8EAB9001FB94F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wiley-Bank/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jchen.Wiley-Bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		901328F627E8EAB9001FB94F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jchen.Wiley-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiley-Bank.app/Wiley-Bank";
+			};
+			name = Debug;
+		};
+		901328F727E8EAB9001FB94F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jchen.Wiley-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiley-Bank.app/Wiley-Bank";
+			};
+			name = Release;
+		};
+		901328F927E8EAB9001FB94F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jchen.Wiley-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wiley-Bank";
+			};
+			name = Debug;
+		};
+		901328FA27E8EAB9001FB94F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jchen.Wiley-BankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wiley-Bank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		901328C327E8EAB8001FB94F /* Build configuration list for PBXProject "Wiley-Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901328F027E8EAB9001FB94F /* Debug */,
+				901328F127E8EAB9001FB94F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901328F227E8EAB9001FB94F /* Build configuration list for PBXNativeTarget "Wiley-Bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901328F327E8EAB9001FB94F /* Debug */,
+				901328F427E8EAB9001FB94F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901328F527E8EAB9001FB94F /* Build configuration list for PBXNativeTarget "Wiley-BankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901328F627E8EAB9001FB94F /* Debug */,
+				901328F727E8EAB9001FB94F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901328F827E8EAB9001FB94F /* Build configuration list for PBXNativeTarget "Wiley-BankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901328F927E8EAB9001FB94F /* Debug */,
+				901328FA27E8EAB9001FB94F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 901328C027E8EAB8001FB94F /* Project object */;
+}
